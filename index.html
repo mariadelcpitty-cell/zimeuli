@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Clase: Scratch - Mensajes</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+        }
+        
+        /* Títulos y Encabezados */
+        h1 {
+            color: #4a148c; /* Morado oscuro */
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #8e24aa; /* Morado */
+            border-bottom: 3px solid #f0e6f7;
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #d81b60; /* Fucsia */
+            font-size: 1.4em;
+            margin-top: 30px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #555;
+            margin-top: -10px;
+        }
+        
+        /* Elementos de la Guía */
+        hr {
+            border: 0;
+            height: 2px;
+            background: #e0e0e0;
+            margin: 40px 0;
+        }
+        .greeting {
+            background: #fdfae6;
+            border: 2px solid #fce883;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            text-align: center;
+        }
+        /* Bloque de diálogo para el profe */
+        blockquote {
+            background: #f1f8e9; /* Verde muy claro */
+            border-left: 6px solid #7cb342; /* Verde */
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+        blockquote strong {
+            font-style: normal;
+        }
+        
+        ul, ol {
+            padding-left: 30px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        
+        /* Estilos para bloques de Scratch (simulados) */
+        .scratch-block {
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            color: black;
+            font-size: 0.95em;
+            margin: 8px 0;
+            line-height: 1.3;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1px solid rgba(0,0,0,0.2);
+        }
+        .event {
+            background-color: #FFBF00; /* Naranja de Eventos */
+            border-color: #e6ac00;
+        }
+        .event-hat {
+            background-color: #FFBF00;
+            border-color: #e6ac00;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            padding-top: 12px;
+        }
+        .looks {
+             background-color: #9966FF; /* Morado de Apariencia */
+             border-color: #8a5ce6;
+             color: white;
+        }
+        .control-hat {
+            background-color: #FFAB19; /* Naranja de Control (Bandera) */
+            border-color: #e69a16;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            padding-top: 12px;
+        }
+        
+        /* Sección de la demostración */
+        .code-demo {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: 1px solid #eee;
+        }
+        .sprite-code {
+            flex: 1;
+            min-width: 250px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .sprite-code strong {
+            font-size: 1.1em;
+            color: #333;
+        }
+        
+        /* Caja de la Misión */
+        .mission-box {
+            background: #e3f2fd;
+            border: 2px dashed #2196f3;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .mission-box h4 {
+            margin-top: 0;
+            color: #1976d2;
+            font-size: 1.3em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>💻 ¡Guía Genial para tu Clase de Scratch! 🧑‍🏫</h1>
+        <p class="subtitle">¡Tu Misión de Hoy: Enseñar el Secreto de los Mensajes! 📨</p>
+
+        <div class="greeting">
+            <p>¡Hola, <strong>Simaily</strong>!</p>
+            <p>Hoy tienes un súper poder: ¡eres el/la profe de tecnología! Tu misión es guiar a tus compañeros para que descubran cómo los personajes (Sprites) en Scratch pueden "hablar" entre ellos usando mensajes.</p>
+            <p>¡No te preocupes, esta guía te dirá exactamente qué hacer y qué decir! ¡Confía en ti, lo harás genial!</p>
+        </div>
+
+        <hr>
+
+        <h2>1. El Guion de la Clase: ¡Paso a Paso!</h2>
+        <p>Sigue este orden para tener una clase espectacular.</p>
+
+        <h3>PARTE 1: El Saludo y la Chispa (5 minutos)</h3>
+        <p>¡Empieza con energía! Preséntate como el/la profe del día.</p>
+        
+        <blockquote>
+            <strong>TU GUION (Qué puedes decir):</strong><br>
+            "¡Muy buenos días a todos! Hoy yo seré su profe de informática. ¿Están listos para aprender algo súper divertido en Scratch?"
+        </blockquote>
+        
+        <p><strong>PREGUNTAS PARA ROMPER EL HIELO (Haz estas preguntas al grupo):</strong></p>
+        <ol>
+            <li>"¿Alguna vez han visto una animación o un juego en Scratch donde dos personajes hablan, uno después del otro?"</li>
+            <li>"¿Cómo creen que un personaje 'sabe' cuándo es su turno de hablar o moverse? ¿Adivinan?"</li>
+        </ol>
+
+        <p>(Escucha un par de respuestas... ¡seguramente dirán "con el bloque de esperar"!... y ahí entras tú).</p>
+
+        <blockquote>
+            <strong>TU GUION:</strong><br>
+            "Usar 'esperar' funciona, ¡pero hoy vamos a aprender un truco de profesional! Es un secreto para que los personajes se avisen entre ellos. Se llama: <strong>¡Enviar Mensajes!</strong>"
+        </blockquote>
+
+        <h3>PARTE 2: El Secreto de los Mensajes (10 minutos)</h3>
+        <p>Aquí explicas el concepto. ¡Usa esta analogía!</p>
+
+        <blockquote>
+            <strong>TU GUION:</strong><br>
+            "Ok, piensen en esto: ¿Qué es un mensaje?"<br><br>
+            "Imagina que estás en un lado del salón y tu amigo está en el otro. Quieres decirle '¡es tu turno!', pero no puedes gritar."<br><br>
+            "Así que le lanzas una bolita de papel 📝 que dice: 'AHORA'. Tu amigo la atrapa, la lee y ¡actúa!"<br><br>
+            "¡En Scratch, los mensajes son EXACTAMENTE eso! Son 'bolitas de papel' invisibles que un personaje lanza para avisarle a otro que haga algo."
+        </blockquote>
+
+        <p><strong>MUESTRA LOS BLOQUES (Explica esto en el proyector):</strong></p>
+        <p>"Para esto, usamos dos bloques súper importantes de color <strong>naranja (Eventos)</strong>:"</p>
+
+        <p><strong>1. El que LANZA el mensaje:</strong></p>
+        <div class="scratch-block event">enviar [mensaje1]</div>
+        <p>"Este bloque es como 'lanzar la bolita de papel'. Puedes cambiarle el nombre a 'mensaje1' por algo claro, como 'turno_del_perro' o 'empezar_a_bailar'."</p>
+
+        <p><strong>2. El que ATRAPA el mensaje:</strong></p>
+        <div class="scratch-block event-hat">al recibir [mensaje1]</div>
+        <p>"Este bloque es el personaje que está 'esperando' la bolita de papel. Cuando la recibe, ¡todo lo que esté debajo de este sombrero se activa!"</p>
+
+        <h3>PARTE 3: Demostración en Vivo (10 minutos)</h3>
+        <p>¡Es hora de que lo vean funcionar! Haz esto en la computadora principal.</p>
+
+        <blockquote>
+            <strong>TU GUION:</strong><br>
+            "Vamos a hacer un ejemplo rápido. Miren mi pantalla."
+        </blockquote>
+
+        <h4>Paso 1: Prepara el escenario</h4>
+        <ul>
+            <li>Borra al gato de Scratch (si quieres).</li>
+            <li>Añade dos personajes (Sprites). Por ejemplo: <strong>'Abby'</strong> y <strong>'Devin'</strong>.</li>
+        </ul>
+
+        <h4>Paso 2: Programa los Personajes</h4>
+        <p>"Vamos a programar a Abby primero. Ella hablará cuando hagamos clic en la bandera verde. Luego, programaremos a Devin para que responda."</p>
+
+        <div class="code-demo">
+            <div class="sprite-code">
+                <strong>Código para ABBY:</strong><br>
+                <div class="scratch-block control-hat">Al hacer clic en 🟢</div>
+                <div class="scratch-block looks">decir "Hola Devin, ¿listo para el reto?" durante 2 segundos</div>
+                <div class="scratch-block event">enviar [turno_devin]</div>
+                <!-- [Imagen de un bloque "Al hacer clic en (bandera verde)"] -->
+                <!-- [Imagen de un bloque "decir 'Hola Devin...' durante 2 segundos"] -->
+                <!-- [Imagen de un bloque "enviar (turno_devin)"] -->
+            </div>
+
+            <div class="sprite-code">
+                <strong>Código para DEVIN:</strong><br>
+                <div class="scratch-block event-hat">al recibir [turno_devin]</div>
+                <div class="scratch-block looks">decir "¡Nací listo, Abby!" durante 2 segundos</div>
+                <!-- [Imagen de un bloque "al recibir (turno_devin)"] -->
+                <!-- [Imagen de un bloque "decir '¡Nací listo, Abby!' durante 2 segundos"] -->
+            </div>
+        </div>
+
+        <h4>Paso 3: ¡La Prueba!</h4>
+        <blockquote>
+            <strong>TU GUION:</strong><br>
+            "¡Listos! Miren lo que pasa al presionar la bandera verde..."<br>
+            (Presiona la bandera. Abby habla... y JUSTO después, Devin responde).<br>
+            "¿Vieron? ¡Devin no habló hasta que recibió el mensaje 'turno_devin'! ¡Es perfecto para crear conversaciones!"
+        </blockquote>
+
+
+        <h3>PARTE 4: ¡El Gran Reto del Diálogo! (15-20 minutos)</h3>
+        <p>¡Ahora les toca a ellos!</p>
+
+        <blockquote>
+            <strong>TU GUION:</strong><br>
+            "¡Excelente! Ahora es su turno. Este es el <strong>Reto del Diálogo</strong>."
+        </blockquote>
+
+        <div class="mission-box">
+            <h4>LA MISIÓN:</h4>
+            <ol>
+                <li>Elige <strong>dos</strong> personajes (Sprites).</li>
+                <li>Crea una conversación entre ellos usando <strong>mensajes</strong>.</li>
+                <li>El diálogo debe tener al menos <strong>4 líneas</strong> en total (Ej: Abby habla, Devin responde, Abby vuelve a hablar, Devin responde de nuevo).</li>
+                <li><strong>BONUS:</strong> Si terminas rápido, ¡añade un tercer personaje que escuche un mensaje y se una a la conversación!</li>
+            </ol>
+            <p><strong>¡Tienen 15 minutos! ¡Empiecen ahora! Yo pasaré por sus puestos para ayudarlos. ¡Recuerden usar <code>enviar</code> y <code>al recibir</code>!</strong></p>
+        </div>
+
+        <p style="margin-top: 20px;"><strong>TU TRABAJO DE PROFE:</strong></p>
+        <ul>
+            <li>Camina por el salón.</li>
+            <li>Si ves a alguien atascado, pregúntale: "¿Creaste un 'Nuevo Mensaje'?" "¿El nombre del mensaje que envías es igual al que recibes?"</li>
+            <li>¡Anima a tus compañeros! "¡Vas súper bien!", "¡Esa idea está genial!".</li>
+        </ul>
+
+        <h3>PARTE 5: Cierre y Aplausos (5 minutos)</h3>
+        <p>¡Termina la clase como un profesional!</p>
+        
+        <blockquote>
+            <strong>TU GUION:</strong><br>
+            "¡Tiempo! ¡Manos arriba!"<br><br>
+            "¡Wow, vi trabajos increíbles! ¿Quién quiere mostrar su diálogo al resto de la clase?"<br>
+            (Elige 2 o 3 voluntarios para que muestren su proyecto).<br><br>
+            "¡Un aplauso para [Nombre del voluntario]! 👏"
+        </blockquote>
+
+        <h4>PREGUNTAS FINALES:</h4>
+        <ol>
+            <li>"Entonces, ¿para qué nos sirvió usar mensajes hoy?"</li>
+            <li>"¿Qué fue lo más divertido de este reto?"</li>
+        </ol>
+
+        <blockquote>
+            <strong>TU GUION:</strong><br>
+            "¡Hicieron un trabajo FANTÁSTICO hoy, equipo! ¡Aprendieron a usar mensajes como todos unos programadores! ¡Muchas gracias por su atención!"
+        </blockquote>
+    </div>
+
+</body>
+</html>
+
